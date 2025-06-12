@@ -1,0 +1,149 @@
+/* App.css */
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+a {
+  text-decoration: none;
+}
+
+ul {
+  list-style: none;
+}
+
+body {
+  font-family: 'Gowun Dodum', sans-serif;
+  background-color: #f9f9f9;
+  margin: 0;
+  padding: 0;
+}
+
+header {
+  background-color: hsl(0, 1%, 15%);
+  padding: 25px 0;
+  text-align: center;
+}
+
+header .logo img {
+  max-width: 75px;
+}
+
+.container {
+  position: relative;
+  height: auto;
+}
+
+.banner {
+  position: relative;
+  background-size: cover;
+  color: white;
+  padding: 70px 0;
+  text-align: center;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.banner .overlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-color: rgba(0, 0, 0, 0.5);
+  z-index: 1;
+}
+
+.banner .text {
+  position: relative;
+  z-index: 2;
+}
+
+.title {
+  font-size: 2.5em;
+  margin-bottom: 10px;
+  font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+  color: white;
+}
+
+.sub {
+  font-size: 1em;
+  margin-bottom: 20px;
+  font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+  color: white;
+}
+
+.contents {
+  padding: 30px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  flex-wrap: nowrap;
+}
+
+.contents > p {
+  margin: 30px 0 50px;
+  text-align: center;
+  font-weight: bold;
+  font-size: 25px;
+}
+
+.todoInput {
+  margin-bottom: 20px;
+  display: flex;
+  justify-content: center;
+  width: 100%;
+}
+
+.todoText {
+  padding: 10px;
+  width: calc(100% - 100px);
+  max-width: 300px;
+  background-color: #fcfcfc;
+}
+
+.addBtn {
+  padding: 10px;
+  margin-left: 10px;
+  color: white;
+  background-color: rgb(0, 0, 0); 
+  border-color: rgb(157, 157, 155);
+  border-radius: 5px;
+  font-family: 'Gowun Dodum', sans-serif;
+}
+
+.todoList {
+  list-style: none;
+  padding: 0;
+  width: 100%;
+  max-width: 500px;
+  background-color: #dfdfd7aa;
+}
+
+.todo {
+  display: flex;
+  justify-content: space-between;
+  padding: 10px;
+  border-bottom: 1px solid #ffffff;
+}
+
+.task {
+  cursor: pointer;
+}
+
+.task.completed {
+  text-decoration: line-through;
+  color: #666666;
+}
+
+.trash {
+  cursor: pointer;
+  color: rgb(123, 123, 123);
+}
+
+.trash:hover {
+  color: darkred;
+}
